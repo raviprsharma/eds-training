@@ -1,0 +1,18 @@
+.eds-banner {
+   display: block;
+   background-color: blue;
+   text-align: center;
+   padding: 20px;
+   margin: 20px 0px;
+}
+
+.eds-banner p.title{
+    color: #fff;
+    font-size: 40px;
+}
+
+.eds-banner p.description{
+    color: gray;
+    font-size: 20px;
+}
+  
