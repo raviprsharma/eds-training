@@ -45,6 +45,79 @@
     main.error .error-number text {
       font-family: monospace;
     }
+
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .error .section{
+          width: 100%;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .center{
+          text-align: center;
+          margin: auto;
+        }
+
+        h1 {
+            font-size: 6rem;
+            margin: 0;
+            color: #ff6f61;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .message {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff !important;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
   </style>
   <link rel="stylesheet" href="/styles/lazy-styles.css">
 </head>
@@ -53,13 +126,12 @@
   <header></header>
   <main class="error">
     <div class="section">
-      <svg viewBox="1 0 38 18" class="error-number">
-        <text x="0" y="17">404</text>
-      </svg>
-      <h2 class="error-message">Page Not Found</h2>
-      <p class="button-container">
-        <a href="/" class="button secondary error-button-home">Go home</a>
-      </p>
+      <div class="container center">
+        <h1>404</h1>
+        <h2>Oops! Page not found.</h2>
+        <p class="message">The page you're looking for might have been moved or deleted. Please check the URL, or go back to the homepage.</p>
+        <a href="/" class="btn">Go to Homepage</a>
+    </div>
     </div>
   </main>
   <footer></footer>
